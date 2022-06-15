@@ -32,8 +32,6 @@ endif(ENABLE_OPENSSL)
 
 include_directories(${CMAKE_BINARY_DIR})
 include_directories ("${PROJECT_SOURCE_DIR}/src")
-include_directories ("vendor/mongoose")
-include_directories ("vendor/libyuarel")
 add_definitions("-DMG_ENABLE_CALLBACK_USERDATA")
 add_definitions("-DMG_ENABLE_HTTP_STREAMING_MULTIPART")
 add_definitions("-DMG_ENABLE_THREADSAFE_MBUF")
